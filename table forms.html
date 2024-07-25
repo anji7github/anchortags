@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title> 
+</head>
+<body>
+   <fieldset>
+    <legend><h1 style="background-color:rebeccapurple;">REGISTER</h1></legend>
+    <form action="" autocomplete="on"  method="get" style="background-color:gray;">
+     <table width="600" cellspacing="-5px">
+        <tr>
+        <td><label for="NAME">NAME :</label> </td>
+        <td><input type="text" name="" id="NA" value="anji yadav" required></td>
+    </tr>
+    <tr>
+        <td><label for="name">LNAME :</label></td>
+        <td><input type="text" name="" id="name"></td>
+    </tr>
+    <tr>
+        <td><label for="DOB">DOB :</label></td>
+        <td><input type="text" name="DOB" id="DOB"></td>
+    </tr>
+        <tr>
+            <td><label for="GR">GENDER :</label></td>
+        <td><input type="radio" name="GR" id="GR" required>MALE
+            <input type="radio" name="GR" id="" required> FEMALE
+        <input type="Radio" name="GR" id="required"> OTHERS</td>
+    </tr>
+    <tr>
+        <td><label for="mail">MAIL ID :</label></td>
+        <td><input type="email" name="MAIL" id="mail" required></td>
+    </tr>
+    <tr>
+        <td><label for="pss">PASSWORD :</label></td>
+        <td><input type="password" name="PASSWORD" id="pss" required pattern="[0-9]{10}[A-Z]{1}[a-z]{1}"></td>
+    </tr>
+    <tr>
+        <td><label for="mobile no">MOBILE NO :</label></td>
+        <td><input type="tel" name="mobile no" id="mobile no" placeholder="enter your number"></td>
+     </tr>
+        <tr>
+            <td><label for="">SKILLS :</label></td>
+        <td><input type="checkbox" name="SK" id="" checked>PALYING
+            <input type="checkbox" name="sk" id=""> reading</td>
+    </tr>
+    <tr>
+        <td><label for="ADDRESS">ADDRESS :</label></td>
+        <td><textarea name="ADDRESS" id="ADDRESS" cols="30" rows="10" maxlength="8" autofocus></textarea></td>
+        <td><input type="text" min="8" ></td>
+    </tr>
+    <tr>
+        <td><label for="city">CITY :</label></td>
+        <td><input type="text" name="city" id="city"></td>
+    </tr>
+    <tr>
+        <td><label for="pin-code">PIN CODE :</label></td>
+        <td><input type="text" name="" id="pin-code"></td>
+    </tr>
+    <tr>
+        <td><label for="state">STATE :</label></td>
+        <td><input list="state">
+            <datalist id="state">
+                <option value="TS">TS</option>
+                <option value="AP">AP</option>
+                <option value="TN">TN</option>
+                <option value="KL">KL</option>
+                <option value="KA">KA</option>
+                <option value="MH">MH</option>
+                <option value="DL">DL</option>
+            </datalist></td>
+    </tr>
+    <tr>
+        <td><label for="COUNTRY">COUNTRY :</label></td>
+        <td><input list="COUNTRY">
+            <datalist id="COUNTRY">
+                <option value="IND">IND</option>
+                <option value="PAK">PAK</option>
+                <option value="AUS">AUS</option>
+                <option value="ENG">ENG</option>
+                <option value="SL">SL</option>
+                <option value="BAN">BAN</option>
+                <option value="SA">SA</option>
+                <option value="WI">WI</option>
+                <option value="AFG">AFG</option>
+                <option value="NZ">NZ</option>
+            </datalist>
+        </td>
+    </tr>
+    <tr>
+        <td><label for="">HOBBIES</label></td>
+        <td><input type="checkbox" name="" id="" checked>Reading
+        <input type="checkbox" name="" id="" checked>Playing
+        <input type="checkbox" name="" id="" checked>Singing
+         <input type="checkbox" name="" id="" checked>others</td>
+    </tr>
+    <tr>
+            <td><label for="QA">QUALIFICATION:</label></td>
+        <td><select name="" id="">
+            <option value="SO">Select Option</option>
+            <option value="10th">10th</option>
+            <option value="inter">inter</option>
+            <option value="b.t">b.tech</option>
+    <br>
+            <input list="qalification" >
+    <datalist id="qalification">
+        <option value="Select Option">Select Option</option>
+            <option value="Annu's Academy high School">Annu's Academy high School</option>
+            <option value="Annu's junior collage">Annu's junior collage</option>
+            <option value="SITS Collage">SITS Collage</option>
+    </datalist>
+</select></td>
+    </tr>
+        <tr>
+            <td><label for="RA">SALARY :</label> </td>
+        <td><input type="range" name="range" id="RA" value="" > </td>
+    </tr>
+        <tr>
+        <td><label for="file">FILE</label> </td>
+        <td><input type="file" name="file" id="file" required> </td>
+    </tr>
+    <tr>
+        <td><label for="">DATE-TIME-LOCAL</label></td>
+       <td> <input type="datetime-local" name="datetime-local" id="datetime-local"></td>
+    </tr>
+    <tr>
+        <td><label for="LABEL">DATE</label></td>
+        <td><input type="date"></td>
+    </tr>
+    <tr>
+        <td><label for="">WEEK</label></td>
+        <td><input type="week"></td>
+    </tr>
+    <tr>
+        <td><label for="">MONTH</label></td>
+        <td><input type="month"></td>
+    </tr>
+    <tr>
+        <td><label for="COLOR">COLOUR</label></td>
+        <td><input type="color"></td>
+    </tr>
+    <tr>
+        <td><label for="">hidden</label></td>
+        <td><input type="hidden"></td>
+    </tr>
+    <tr>
+        <td><label for="">SEARCH</label></td>
+        <td><input type="search"></td>
+    </tr>
+    <tr>
+        <td><label for="">TIME</label></td>
+        <td><input type="time"></td>
+    </tr>
+    <tr>
+        <th rowspan="5"> Qualification</th>
+        <th>STATE EXAMINATION</th>
+        <th>BOARD</th>
+        <th>CGPA</th>
+        <th> Year of passing</th>
+    </tr>
+    <tr>
+        <td align="center">Class X</td>
+        <td><input type="text"></td>
+        <td><input type="number"></td>
+        <td><input type="number"></td>
+    </tr>
+    <tr>
+        <td align="center">Class XI & XII</td>
+        <td><input type="text"></td>
+        <td><input type="number"></td>
+        <td><input type="number"></td> 
+    </tr>
+    <tr>
+        <td align="center">Graduation</td>
+        <td><input type="text"></td>
+        <td><input type="number"></td>
+        <td><input type="number"></td>
+    </tr>
+    <tr>
+        <td align="center">Master</td>
+        <td><input type="text"></td>
+        <td><input type="number"></td>
+        <td><input type="number"></td>
+    </tr>
+   
+<tr>
+    <td><label for="url">LINKDIN PROFILE</label></td>
+    <td><input type="url" id="url"></td>
+</tr>
+
+<tr>
+<td>
+    <input type="submit" name="submit" id="submit">
+    <input type="reset" name="reset" id="reset">
+</td>
+</tr>
+<tr>
+    <td>
+        <button>Submit</button>
+        <button>Input</button>
+    </td>
+</tr>
+     </table>
+   </fieldset> 
+</body>
+</html>
